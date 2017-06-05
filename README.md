@@ -1,7 +1,7 @@
 # Pokemon Radar
 Looking at my github now .. you probably think I am obssesed with pokemon ... well I am not, I just am following  a course and adding stuff as I go.
 
-<img src="Screens/MYAPP_GIF.gif.jpeg" width="250" />
+<img src="Screens/MYAPP_GIF.gif" width="250" />
 
 ## Technology Stack
 Mapbox
