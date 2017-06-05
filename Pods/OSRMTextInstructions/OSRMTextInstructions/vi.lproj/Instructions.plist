@@ -1,0 +1,713 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>meta</key>
+	<dict>
+		<key>capitalizeFirstLetter</key>
+		<true/>
+	</dict>
+	<key>v5</key>
+	<dict>
+		<key>arrive</key>
+		<dict>
+			<key>default</key>
+			<dict>
+				<key>default</key>
+				<string>Đến nơi {nth}</string>
+			</dict>
+			<key>left</key>
+			<dict>
+				<key>default</key>
+				<string>Đến nơi {nth} ở bên trái</string>
+			</dict>
+			<key>right</key>
+			<dict>
+				<key>default</key>
+				<string>Đến nơi {nth} ở bên phải</string>
+			</dict>
+			<key>sharp left</key>
+			<dict>
+				<key>default</key>
+				<string>Đến nơi {nth} ở bên trái</string>
+			</dict>
+			<key>sharp right</key>
+			<dict>
+				<key>default</key>
+				<string>Đến nơi {nth} ở bên phải</string>
+			</dict>
+			<key>slight left</key>
+			<dict>
+				<key>default</key>
+				<string>Đến nơi {nth} ở bên trái</string>
+			</dict>
+			<key>slight right</key>
+			<dict>
+				<key>default</key>
+				<string>Đến nơi {nth} ở bên phải</string>
+			</dict>
+			<key>straight</key>
+			<dict>
+				<key>default</key>
+				<string>Đến nơi {nth} ở trước mặt</string>
+			</dict>
+		</dict>
+		<key>constants</key>
+		<dict>
+			<key>direction</key>
+			<dict>
+				<key>east</key>
+				<string>đông</string>
+				<key>north</key>
+				<string>bắc</string>
+				<key>northeast</key>
+				<string>đông bắc</string>
+				<key>northwest</key>
+				<string>tây bắc</string>
+				<key>south</key>
+				<string>nam</string>
+				<key>southeast</key>
+				<string>đông nam</string>
+				<key>southwest</key>
+				<string>tây nam</string>
+				<key>west</key>
+				<string>tây</string>
+			</dict>
+			<key>lanes</key>
+			<dict>
+				<key>ox</key>
+				<string>Đi bên trái</string>
+				<key>oxo</key>
+				<string>Đi bên trái hay bên phải</string>
+				<key>xo</key>
+				<string>Đi bên phải</string>
+				<key>xox</key>
+				<string>Đi vào giữa</string>
+			</dict>
+			<key>modifier</key>
+			<dict>
+				<key>left</key>
+				<string>trái</string>
+				<key>right</key>
+				<string>phải</string>
+				<key>sharp left</key>
+				<string>trái gắt</string>
+				<key>sharp right</key>
+				<string>phải gắt</string>
+				<key>slight left</key>
+				<string>trái nghiêng</string>
+				<key>slight right</key>
+				<string>phải nghiêng</string>
+				<key>straight</key>
+				<string>thẳng</string>
+				<key>uturn</key>
+				<string>ngược</string>
+			</dict>
+			<key>ordinalize</key>
+			<dict>
+				<key>1</key>
+				<string>đầu tiên</string>
+				<key>10</key>
+				<string>thứ 10</string>
+				<key>2</key>
+				<string>thứ 2</string>
+				<key>3</key>
+				<string>thứ 3</string>
+				<key>4</key>
+				<string>thứ 4</string>
+				<key>5</key>
+				<string>thứ 5</string>
+				<key>6</key>
+				<string>thú 6</string>
+				<key>7</key>
+				<string>thứ 7</string>
+				<key>8</key>
+				<string>thứ 8</string>
+				<key>9</key>
+				<string>thứ 9</string>
+			</dict>
+		</dict>
+		<key>continue</key>
+		<dict>
+			<key>default</key>
+			<dict>
+				<key>default</key>
+				<string>Chạy tiếp bên {modifier}</string>
+				<key>destination</key>
+				<string>Chạy tiếp bên {modifier} đến {destination}</string>
+				<key>name</key>
+				<string>Chạy tiếp bên {modifier} trên {way_name}</string>
+			</dict>
+			<key>slight left</key>
+			<dict>
+				<key>default</key>
+				<string>Nghiêng về bên trái</string>
+				<key>destination</key>
+				<string>Nghiêng về bên trái đến {destination}</string>
+				<key>name</key>
+				<string>Nghiêng về bên trái vào {way_name}</string>
+			</dict>
+			<key>slight right</key>
+			<dict>
+				<key>default</key>
+				<string>Nghiêng về bên phải</string>
+				<key>destination</key>
+				<string>Nghiêng về bên phải đến {destination}</string>
+				<key>name</key>
+				<string>Nghiêng về bên phải vào {way_name}</string>
+			</dict>
+			<key>straight</key>
+			<dict>
+				<key>default</key>
+				<string>Chạy thẳng</string>
+				<key>destination</key>
+				<string>Chạy tiếp đến {destination}</string>
+				<key>name</key>
+				<string>Chạy tiếp trên {way_name}</string>
+			</dict>
+			<key>uturn</key>
+			<dict>
+				<key>default</key>
+				<string>Quẹo ngược lại</string>
+				<key>destination</key>
+				<string>Quẹo ngược đến {destination}</string>
+				<key>name</key>
+				<string>Quẹo ngược lại {way_name}</string>
+			</dict>
+		</dict>
+		<key>depart</key>
+		<dict>
+			<key>default</key>
+			<dict>
+				<key>default</key>
+				<string>Đi về hướng {direction}</string>
+				<key>name</key>
+				<string>Đi về hướng {direction} trên {way_name}</string>
+			</dict>
+		</dict>
+		<key>end of road</key>
+		<dict>
+			<key>default</key>
+			<dict>
+				<key>default</key>
+				<string>Quẹo {modifier}</string>
+				<key>destination</key>
+				<string>Quẹo {modifier} đến {destination}</string>
+				<key>name</key>
+				<string>Quẹo {modifier} vào {way_name}</string>
+			</dict>
+			<key>straight</key>
+			<dict>
+				<key>default</key>
+				<string>Chạy thẳng</string>
+				<key>destination</key>
+				<string>Chạy tiếp đến {destination}</string>
+				<key>name</key>
+				<string>Chạy tiếp trên {way_name}</string>
+			</dict>
+			<key>uturn</key>
+			<dict>
+				<key>default</key>
+				<string>Quẹo ngược lại tại cuối đường</string>
+				<key>destination</key>
+				<string>Quẹo ngược đến {destination} tại cuối đường</string>
+				<key>name</key>
+				<string>Quẹo ngược vào {way_name} tại cuối đường</string>
+			</dict>
+		</dict>
+		<key>fork</key>
+		<dict>
+			<key>default</key>
+			<dict>
+				<key>default</key>
+				<string>Đi bên {modifier} ở ngã ba</string>
+				<key>destination</key>
+				<string>Đi bên {modifier} ở ngã ba đến {destination}</string>
+				<key>name</key>
+				<string>Đi bên {modifier} ở ngã ba vào {way_name}</string>
+			</dict>
+			<key>sharp left</key>
+			<dict>
+				<key>default</key>
+				<string>Quẹo gắt bên trái ở ngã ba</string>
+				<key>destination</key>
+				<string>Quẹo gắt bên trái ở ngã ba đến {destination}</string>
+				<key>name</key>
+				<string>Quẹo gắt bên trái ở ngã ba vào {way_name}</string>
+			</dict>
+			<key>sharp right</key>
+			<dict>
+				<key>default</key>
+				<string>Quẹo gắt bên phải ở ngã ba</string>
+				<key>destination</key>
+				<string>Quẹo gắt bên phải ở ngã ba đến {destination}</string>
+				<key>name</key>
+				<string>Quẹo gắt bên phải ở ngã ba vào {way_name}</string>
+			</dict>
+			<key>slight left</key>
+			<dict>
+				<key>default</key>
+				<string>Nghiêng về bên trái ở ngã ba</string>
+				<key>destination</key>
+				<string>Nghiêng về bên trái ở ngã ba đến {destination}</string>
+				<key>name</key>
+				<string>Nghiêng về bên trái ở ngã ba vào {way_name}</string>
+			</dict>
+			<key>slight right</key>
+			<dict>
+				<key>default</key>
+				<string>Nghiêng về bên phải ở ngã ba</string>
+				<key>destination</key>
+				<string>Nghiêng về bên phải ở ngã ba đến {destination}</string>
+				<key>name</key>
+				<string>Nghiêng về bên phải ở ngã ba vào {way_name}</string>
+			</dict>
+			<key>uturn</key>
+			<dict>
+				<key>default</key>
+				<string>Quẹo ngược lại</string>
+				<key>destination</key>
+				<string>Quẹo ngược lại đến {destination}</string>
+				<key>name</key>
+				<string>Quẹo ngược lại {way_name}</string>
+			</dict>
+		</dict>
+		<key>merge</key>
+		<dict>
+			<key>default</key>
+			<dict>
+				<key>default</key>
+				<string>Nhập sang {modifier}</string>
+				<key>destination</key>
+				<string>Nhập sang {modifier} đến {destination}</string>
+				<key>name</key>
+				<string>Nhập sang {modifier} vào {way_name}</string>
+			</dict>
+			<key>sharp left</key>
+			<dict>
+				<key>default</key>
+				<string>Nhập sang trái</string>
+				<key>destination</key>
+				<string>Nhập sang trái đến {destination}</string>
+				<key>name</key>
+				<string>Nhập sang trái vào {way_name}</string>
+			</dict>
+			<key>sharp right</key>
+			<dict>
+				<key>default</key>
+				<string>Nhập sang phải</string>
+				<key>destination</key>
+				<string>Nhập sang phải đến {destination}</string>
+				<key>name</key>
+				<string>Nhập sang phải vào {way_name}</string>
+			</dict>
+			<key>slight left</key>
+			<dict>
+				<key>default</key>
+				<string>Nhập sang trái</string>
+				<key>destination</key>
+				<string>Nhập sang trái đến {destination}</string>
+				<key>name</key>
+				<string>Nhập sang trái vào {way_name}</string>
+			</dict>
+			<key>slight right</key>
+			<dict>
+				<key>default</key>
+				<string>Nhập sang phải</string>
+				<key>destination</key>
+				<string>Nhập sang phải đến {destination}</string>
+				<key>name</key>
+				<string>Nhập sang phải vào {way_name}</string>
+			</dict>
+			<key>uturn</key>
+			<dict>
+				<key>default</key>
+				<string>Quẹo ngược lại</string>
+				<key>destination</key>
+				<string>Quẹo ngược lại đến {destination}</string>
+				<key>name</key>
+				<string>Quẹo ngược lại {way_name}</string>
+			</dict>
+		</dict>
+		<key>modes</key>
+		<dict>
+			<key>ferry</key>
+			<dict>
+				<key>default</key>
+				<string>Lên phà</string>
+				<key>destination</key>
+				<string>Lên phà đi {destination}</string>
+				<key>name</key>
+				<string>Lên phà {way_name}</string>
+			</dict>
+		</dict>
+		<key>new name</key>
+		<dict>
+			<key>default</key>
+			<dict>
+				<key>default</key>
+				<string>Chạy tiếp bên {modifier}</string>
+				<key>destination</key>
+				<string>Chạy tiếp bên {modifier} đến {destination}</string>
+				<key>name</key>
+				<string>Chạy tiếp bên {modifier} trên {way_name}</string>
+			</dict>
+			<key>sharp left</key>
+			<dict>
+				<key>default</key>
+				<string>Quẹo gắt bên trái</string>
+				<key>destination</key>
+				<string>Quẹo gắt bên trái đến {destination}</string>
+				<key>name</key>
+				<string>Quẹo gắt bên trái vào {way_name}</string>
+			</dict>
+			<key>sharp right</key>
+			<dict>
+				<key>default</key>
+				<string>Quẹo gắt bên phải</string>
+				<key>destination</key>
+				<string>Quẹo gắt bên phải đến {destination}</string>
+				<key>name</key>
+				<string>Quẹo gắt bên phải vào {way_name}</string>
+			</dict>
+			<key>slight left</key>
+			<dict>
+				<key>default</key>
+				<string>Nghiêng về bên trái</string>
+				<key>destination</key>
+				<string>Nghiêng về bên trái đến {destination}</string>
+				<key>name</key>
+				<string>Nghiêng về bên trái vào {way_name}</string>
+			</dict>
+			<key>slight right</key>
+			<dict>
+				<key>default</key>
+				<string>Nghiêng về bên phải</string>
+				<key>destination</key>
+				<string>Nghiêng về bên phải đến {destination}</string>
+				<key>name</key>
+				<string>Nghiêng về bên phải vào {way_name}</string>
+			</dict>
+			<key>uturn</key>
+			<dict>
+				<key>default</key>
+				<string>Quẹo ngược lại</string>
+				<key>destination</key>
+				<string>Quẹo ngược lại đến {destination}</string>
+				<key>name</key>
+				<string>Quẹo ngược lại {way_name}</string>
+			</dict>
+		</dict>
+		<key>notification</key>
+		<dict>
+			<key>default</key>
+			<dict>
+				<key>default</key>
+				<string>Chạy tiếp bên {modifier}</string>
+				<key>destination</key>
+				<string>Chạy tiếp bên {modifier} đến {destination}</string>
+				<key>name</key>
+				<string>Chạy tiếp bên {modifier} trên {way_name}</string>
+			</dict>
+			<key>uturn</key>
+			<dict>
+				<key>default</key>
+				<string>Quẹo ngược lại</string>
+				<key>destination</key>
+				<string>Quẹo ngược lại đến {destination}</string>
+				<key>name</key>
+				<string>Quẹo ngược lại {way_name}</string>
+			</dict>
+		</dict>
+		<key>off ramp</key>
+		<dict>
+			<key>default</key>
+			<dict>
+				<key>default</key>
+				<string>Đi đường nhánh</string>
+				<key>destination</key>
+				<string>Đi đường nhánh đến {destination}</string>
+				<key>name</key>
+				<string>Đi đường nhánh {way_name}</string>
+			</dict>
+			<key>left</key>
+			<dict>
+				<key>default</key>
+				<string>Đi đường nhánh bên trái</string>
+				<key>destination</key>
+				<string>Đi đường nhánh bên trái đến {destination}</string>
+				<key>name</key>
+				<string>Đi đường nhánh {way_name} bên trái</string>
+			</dict>
+			<key>right</key>
+			<dict>
+				<key>default</key>
+				<string>Đi đường nhánh bên phải</string>
+				<key>destination</key>
+				<string>Đi đường nhánh bên phải đến {destination}</string>
+				<key>name</key>
+				<string>Đi đường nhánh {way_name} bên phải</string>
+			</dict>
+			<key>sharp left</key>
+			<dict>
+				<key>default</key>
+				<string>Đi đường nhánh bên trái</string>
+				<key>destination</key>
+				<string>Đi đường nhánh bên trái đến {destination}</string>
+				<key>name</key>
+				<string>Đi đường nhánh {way_name} bên trái</string>
+			</dict>
+			<key>sharp right</key>
+			<dict>
+				<key>default</key>
+				<string>Đi đường nhánh bên phải</string>
+				<key>destination</key>
+				<string>Đi đường nhánh bên phải đến {destination}</string>
+				<key>name</key>
+				<string>Đi đường nhánh {way_name} bên phải</string>
+			</dict>
+			<key>slight left</key>
+			<dict>
+				<key>default</key>
+				<string>Đi đường nhánh bên trái</string>
+				<key>destination</key>
+				<string>Đi đường nhánh bên trái đến {destination}</string>
+				<key>name</key>
+				<string>Đi đường nhánh {way_name} bên trái</string>
+			</dict>
+			<key>slight right</key>
+			<dict>
+				<key>default</key>
+				<string>Đi đường nhánh bên phải</string>
+				<key>destination</key>
+				<string>Đi đường nhánh bên phải đến {destination}</string>
+				<key>name</key>
+				<string>Đi đường nhánh {way_name} bên phải</string>
+			</dict>
+		</dict>
+		<key>on ramp</key>
+		<dict>
+			<key>default</key>
+			<dict>
+				<key>default</key>
+				<string>Đi đường nhánh</string>
+				<key>destination</key>
+				<string>Đi đường nhánh đến {destination}</string>
+				<key>name</key>
+				<string>Đi đường nhánh {way_name}</string>
+			</dict>
+			<key>left</key>
+			<dict>
+				<key>default</key>
+				<string>Đi đường nhánh bên trái</string>
+				<key>destination</key>
+				<string>Đi đường nhánh bên trái đến {destination}</string>
+				<key>name</key>
+				<string>Đi đường nhánh {way_name} bên trái</string>
+			</dict>
+			<key>right</key>
+			<dict>
+				<key>default</key>
+				<string>Đi đường nhánh bên phải</string>
+				<key>destination</key>
+				<string>Đi đường nhánh bên phải đến {destination}</string>
+				<key>name</key>
+				<string>Đi đường nhánh {way_name} bên phải</string>
+			</dict>
+			<key>sharp left</key>
+			<dict>
+				<key>default</key>
+				<string>Đi đường nhánh bên trái</string>
+				<key>destination</key>
+				<string>Đi đường nhánh bên trái đến {destination}</string>
+				<key>name</key>
+				<string>Đi đường nhánh {way_name} bên trái</string>
+			</dict>
+			<key>sharp right</key>
+			<dict>
+				<key>default</key>
+				<string>Đi đường nhánh bên phải</string>
+				<key>destination</key>
+				<string>Đi đường nhánh bên phải đến {destination}</string>
+				<key>name</key>
+				<string>Đi đường nhánh {way_name} bên phải</string>
+			</dict>
+			<key>slight left</key>
+			<dict>
+				<key>default</key>
+				<string>Đi đường nhánh bên trái</string>
+				<key>destination</key>
+				<string>Đi đường nhánh bên trái đến {destination}</string>
+				<key>name</key>
+				<string>Đi đường nhánh {way_name} bên trái</string>
+			</dict>
+			<key>slight right</key>
+			<dict>
+				<key>default</key>
+				<string>Đi đường nhánh bên phải</string>
+				<key>destination</key>
+				<string>Đi đường nhánh bên phải đến {destination}</string>
+				<key>name</key>
+				<string>Đi đường nhánh {way_name} bên phải</string>
+			</dict>
+		</dict>
+		<key>rotary</key>
+		<dict>
+			<key>default</key>
+			<dict>
+				<key>default</key>
+				<dict>
+					<key>default</key>
+					<string>Đi vào bùng binh</string>
+					<key>destination</key>
+					<string>Vào bùng binh và ra để đi {destination}</string>
+					<key>name</key>
+					<string>Đi vào bùng binh và ra tại {way_name}</string>
+				</dict>
+				<key>exit</key>
+				<dict>
+					<key>default</key>
+					<string>Đi vào bùng binh và ra tại đường {exit_number}</string>
+					<key>destination</key>
+					<string>Đi vào bùng binh và ra tại đường {exit_number} đến {destination}</string>
+					<key>name</key>
+					<string>Đi vào bùng binh và ra tại đường {exit_number} tức {way_name}</string>
+				</dict>
+				<key>name</key>
+				<dict>
+					<key>default</key>
+					<string>Đi vào {rotary_name}</string>
+					<key>destination</key>
+					<string>Đi và {rotary_name} và ra để đi {destination}</string>
+					<key>name</key>
+					<string>Đi vào {rotary_name} và ra tại {way_name}</string>
+				</dict>
+				<key>name_exit</key>
+				<dict>
+					<key>default</key>
+					<string>Đi vào {rotary_name} và ra tại đường {exit_number}</string>
+					<key>destination</key>
+					<string>Đi vào {rotary_name} và ra tại đường {exit_number} đến {destination}</string>
+					<key>name</key>
+					<string>Đi vào {rotary_name} và ra tại đường {exit_number} tức {way_name}</string>
+				</dict>
+			</dict>
+		</dict>
+		<key>roundabout</key>
+		<dict>
+			<key>default</key>
+			<dict>
+				<key>default</key>
+				<dict>
+					<key>default</key>
+					<string>Đi vào vòng xuyến</string>
+					<key>destination</key>
+					<string>Đi vào vòng xuyến và ra để đi {destination}</string>
+					<key>name</key>
+					<string>Đi vào vòng xuyến và ra tại {way_name}</string>
+				</dict>
+				<key>exit</key>
+				<dict>
+					<key>default</key>
+					<string>Đi vào vòng xuyến và ra tại đường {exit_number}</string>
+					<key>destination</key>
+					<string>Đi vào vòng xuyến và ra tại đường {exit_number} đến {destination}</string>
+					<key>name</key>
+					<string>Đi vào vòng xuyến và ra tại đường {exit_number} tức {way_name}</string>
+				</dict>
+			</dict>
+		</dict>
+		<key>roundabout turn</key>
+		<dict>
+			<key>default</key>
+			<dict>
+				<key>default</key>
+				<string>Đi bên {modifier} tại vòng xuyến</string>
+				<key>destination</key>
+				<string>Đi bên {modifier} tại vòng xuyến để đi {destination}</string>
+				<key>name</key>
+				<string>Đi bên {modifier} tại vòng xuyến để vào {way_name}</string>
+			</dict>
+			<key>left</key>
+			<dict>
+				<key>default</key>
+				<string>Quẹo trái tại vòng xuyến</string>
+				<key>destination</key>
+				<string>Quẹo trái tại vòng xuyến để đi {destination}</string>
+				<key>name</key>
+				<string>Quẹo trái tại vòng xuyến để vào {way_name}</string>
+			</dict>
+			<key>right</key>
+			<dict>
+				<key>default</key>
+				<string>Quẹo phải tại vòng xuyến</string>
+				<key>destination</key>
+				<string>Quẹo phải tại vòng xuyến để đi {destination}</string>
+				<key>name</key>
+				<string>Quẹo phải ti vòng xuyến để vào {way_name}</string>
+			</dict>
+			<key>straight</key>
+			<dict>
+				<key>default</key>
+				<string>Chạy thẳng tại vòng xuyến</string>
+				<key>destination</key>
+				<string>Chạy thẳng tại vòng xuyến để đi {destination}</string>
+				<key>name</key>
+				<string>Chạy thẳng tại vòng xuyến để chạy tiếp trên {way_name}</string>
+			</dict>
+		</dict>
+		<key>turn</key>
+		<dict>
+			<key>default</key>
+			<dict>
+				<key>default</key>
+				<string>Quẹo {modifier}</string>
+				<key>destination</key>
+				<string>Quẹo {modifier} đến {destination}</string>
+				<key>name</key>
+				<string>Quẹo {modifier} vào {way_name}</string>
+			</dict>
+			<key>left</key>
+			<dict>
+				<key>default</key>
+				<string>Quẹo trái</string>
+				<key>destination</key>
+				<string>Quẹo trái đến {destination}</string>
+				<key>name</key>
+				<string>Quẹo trái vào {way_name}</string>
+			</dict>
+			<key>right</key>
+			<dict>
+				<key>default</key>
+				<string>Quẹo phải</string>
+				<key>destination</key>
+				<string>Quẹo phải đến {destination}</string>
+				<key>name</key>
+				<string>Quẹo phải vào {way_name}</string>
+			</dict>
+			<key>straight</key>
+			<dict>
+				<key>default</key>
+				<string>Chạy thẳng</string>
+				<key>destination</key>
+				<string>Chạy thẳng đến {destination}</string>
+				<key>name</key>
+				<string>Chạy thẳng vào {way_name}</string>
+			</dict>
+		</dict>
+		<key>use lane</key>
+		<dict>
+			<key>default</key>
+			<dict>
+				<key>default</key>
+				<string>{lane_instruction}</string>
+			</dict>
+			<key>no_lanes</key>
+			<dict>
+				<key>default</key>
+				<string>Chạy thẳng</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

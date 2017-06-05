@@ -1,0 +1,6 @@
+framework module OSRMTextInstructions {
+  umbrella header "OSRMTextInstructions-umbrella.h"
+
+  export *
+  module * { export * }
+}

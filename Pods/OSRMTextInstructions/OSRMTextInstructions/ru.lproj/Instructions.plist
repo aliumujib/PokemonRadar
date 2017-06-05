@@ -1,0 +1,713 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>meta</key>
+	<dict>
+		<key>capitalizeFirstLetter</key>
+		<true/>
+	</dict>
+	<key>v5</key>
+	<dict>
+		<key>arrive</key>
+		<dict>
+			<key>default</key>
+			<dict>
+				<key>default</key>
+				<string>Вы прибыли в {nth} пункт назначения</string>
+			</dict>
+			<key>left</key>
+			<dict>
+				<key>default</key>
+				<string>Вы прибыли в {nth} пункт назначения, он находится слева</string>
+			</dict>
+			<key>right</key>
+			<dict>
+				<key>default</key>
+				<string>Вы прибыли в {nth} пункт назначения, он находится справа</string>
+			</dict>
+			<key>sharp left</key>
+			<dict>
+				<key>default</key>
+				<string>Вы прибыли в {nth} пункт назначения, он находится слева</string>
+			</dict>
+			<key>sharp right</key>
+			<dict>
+				<key>default</key>
+				<string>Вы прибыли в {nth} пункт назначения, он находится справа</string>
+			</dict>
+			<key>slight left</key>
+			<dict>
+				<key>default</key>
+				<string>Вы прибыли в {nth} пункт назначения, он находится слева</string>
+			</dict>
+			<key>slight right</key>
+			<dict>
+				<key>default</key>
+				<string>Вы прибыли в {nth} пункт назначения, он находится справа</string>
+			</dict>
+			<key>straight</key>
+			<dict>
+				<key>default</key>
+				<string>Вы прибыли в {nth} пункт назначения, он находится перед вами</string>
+			</dict>
+		</dict>
+		<key>constants</key>
+		<dict>
+			<key>direction</key>
+			<dict>
+				<key>east</key>
+				<string>восточном</string>
+				<key>north</key>
+				<string>северном</string>
+				<key>northeast</key>
+				<string>северо-восточном</string>
+				<key>northwest</key>
+				<string>северо-западном</string>
+				<key>south</key>
+				<string>южном</string>
+				<key>southeast</key>
+				<string>юго-восточном</string>
+				<key>southwest</key>
+				<string>юго-западном</string>
+				<key>west</key>
+				<string>западном</string>
+			</dict>
+			<key>lanes</key>
+			<dict>
+				<key>ox</key>
+				<string>Держитесь левее</string>
+				<key>oxo</key>
+				<string>Держитесь слева или справа</string>
+				<key>xo</key>
+				<string>Держитесь правее</string>
+				<key>xox</key>
+				<string>Держитесь посередине</string>
+			</dict>
+			<key>modifier</key>
+			<dict>
+				<key>left</key>
+				<string>налево</string>
+				<key>right</key>
+				<string>направо</string>
+				<key>sharp left</key>
+				<string>налево</string>
+				<key>sharp right</key>
+				<string>направо</string>
+				<key>slight left</key>
+				<string>левее</string>
+				<key>slight right</key>
+				<string>правее</string>
+				<key>straight</key>
+				<string>прямо</string>
+				<key>uturn</key>
+				<string>на разворот</string>
+			</dict>
+			<key>ordinalize</key>
+			<dict>
+				<key>1</key>
+				<string>первый</string>
+				<key>10</key>
+				<string>десятый</string>
+				<key>2</key>
+				<string>второй</string>
+				<key>3</key>
+				<string>третий</string>
+				<key>4</key>
+				<string>четвёртый</string>
+				<key>5</key>
+				<string>пятый</string>
+				<key>6</key>
+				<string>шестой</string>
+				<key>7</key>
+				<string>седьмой</string>
+				<key>8</key>
+				<string>восьмой</string>
+				<key>9</key>
+				<string>девятый</string>
+			</dict>
+		</dict>
+		<key>continue</key>
+		<dict>
+			<key>default</key>
+			<dict>
+				<key>default</key>
+				<string>Двигайтесь {modifier}</string>
+				<key>destination</key>
+				<string>Двигайтесь {modifier} в направлении {destination}</string>
+				<key>name</key>
+				<string>Двигайтесь {modifier} по {way_name}</string>
+			</dict>
+			<key>slight left</key>
+			<dict>
+				<key>default</key>
+				<string>Плавно поверните налево</string>
+				<key>destination</key>
+				<string>Плавно поверните налево в направлении {destination}</string>
+				<key>name</key>
+				<string>Плавно поверните налево на {way_name}</string>
+			</dict>
+			<key>slight right</key>
+			<dict>
+				<key>default</key>
+				<string>Плавно поверните направо</string>
+				<key>destination</key>
+				<string>Плавно поверните направо в направлении {destination}</string>
+				<key>name</key>
+				<string>Плавно поверните направо на {way_name}</string>
+			</dict>
+			<key>straight</key>
+			<dict>
+				<key>default</key>
+				<string>Двигайтесь прямо</string>
+				<key>destination</key>
+				<string>Продолжите движение в направлении {destination}</string>
+				<key>name</key>
+				<string>Продолжите движение по {way_name}</string>
+			</dict>
+			<key>uturn</key>
+			<dict>
+				<key>default</key>
+				<string>Развернитесь</string>
+				<key>destination</key>
+				<string>Развернитесь в направлении {destination}</string>
+				<key>name</key>
+				<string>Развернитесь на {way_name}</string>
+			</dict>
+		</dict>
+		<key>depart</key>
+		<dict>
+			<key>default</key>
+			<dict>
+				<key>default</key>
+				<string>Двигайтесь в {direction} направлении</string>
+				<key>name</key>
+				<string>Двигайтесь в {direction} направлении по {way_name}</string>
+			</dict>
+		</dict>
+		<key>end of road</key>
+		<dict>
+			<key>default</key>
+			<dict>
+				<key>default</key>
+				<string>Поверните {modifier}</string>
+				<key>destination</key>
+				<string>Поверните {modifier} в направлении {destination}</string>
+				<key>name</key>
+				<string>Поверните {modifier} на {way_name}</string>
+			</dict>
+			<key>straight</key>
+			<dict>
+				<key>default</key>
+				<string>Двигайтесь прямо</string>
+				<key>destination</key>
+				<string>Двигайтесь прямо в направлении {destination}</string>
+				<key>name</key>
+				<string>Двигайтесь прямо по {way_name}</string>
+			</dict>
+			<key>uturn</key>
+			<dict>
+				<key>default</key>
+				<string>В конце дороги развернитесь</string>
+				<key>destination</key>
+				<string>В конце дороги развернитесь в направлении {destination}</string>
+				<key>name</key>
+				<string>Развернитесь в конце {way_name}</string>
+			</dict>
+		</dict>
+		<key>fork</key>
+		<dict>
+			<key>default</key>
+			<dict>
+				<key>default</key>
+				<string>На развилке двигайтесь {modifier}</string>
+				<key>destination</key>
+				<string>На развилке двигайтесь {modifier} в направлении {destination}</string>
+				<key>name</key>
+				<string>На развилке двигайтесь {modifier} на {way_name}</string>
+			</dict>
+			<key>sharp left</key>
+			<dict>
+				<key>default</key>
+				<string>На развилке резко поверните налево</string>
+				<key>destination</key>
+				<string>На развилке резко поверните налево и продолжите движение в направлении {destination}</string>
+				<key>name</key>
+				<string>На развилке резко поверните налево на {way_name}</string>
+			</dict>
+			<key>sharp right</key>
+			<dict>
+				<key>default</key>
+				<string>На развилке резко поверните направо</string>
+				<key>destination</key>
+				<string>На развилке резко поверните направо и продолжите движение в направлении {destination}</string>
+				<key>name</key>
+				<string>На развилке резко поверните направо на {way_name}</string>
+			</dict>
+			<key>slight left</key>
+			<dict>
+				<key>default</key>
+				<string>На развилке держитесь левее</string>
+				<key>destination</key>
+				<string>На развилке держитесь левее и продолжите движение в направлении {destination}</string>
+				<key>name</key>
+				<string>На развилке держитесь левее на {way_name}</string>
+			</dict>
+			<key>slight right</key>
+			<dict>
+				<key>default</key>
+				<string>На развилке держитесь правее</string>
+				<key>destination</key>
+				<string>На развилке держитесь правее и продолжите движение в направлении {destination}</string>
+				<key>name</key>
+				<string>На развилке держитесь правее на {way_name}</string>
+			</dict>
+			<key>uturn</key>
+			<dict>
+				<key>default</key>
+				<string>На развилке развернитесь</string>
+				<key>destination</key>
+				<string>На развилке развернитесь и продолжите движение в направлении {destination}</string>
+				<key>name</key>
+				<string>На развилке развернитесь на {way_name}</string>
+			</dict>
+		</dict>
+		<key>merge</key>
+		<dict>
+			<key>default</key>
+			<dict>
+				<key>default</key>
+				<string>Перестройтесь {modifier}</string>
+				<key>destination</key>
+				<string>Перестройтесь {modifier} в направлении {destination}</string>
+				<key>name</key>
+				<string>Перестройтесь {modifier} на {way_name}</string>
+			</dict>
+			<key>sharp left</key>
+			<dict>
+				<key>default</key>
+				<string>Перестраивайтесь левее</string>
+				<key>destination</key>
+				<string>Перестраивайтесь левее в направлении {destination}</string>
+				<key>name</key>
+				<string>Перестраивайтесь левее на {way_name}</string>
+			</dict>
+			<key>sharp right</key>
+			<dict>
+				<key>default</key>
+				<string>Перестраивайтесь правее</string>
+				<key>destination</key>
+				<string>Перестраивайтесь правее в направлении {destination}</string>
+				<key>name</key>
+				<string>Перестраивайтесь правее на {way_name}</string>
+			</dict>
+			<key>slight left</key>
+			<dict>
+				<key>default</key>
+				<string>Перестройтесь левее</string>
+				<key>destination</key>
+				<string>Перестройтесь левее в направлении {destination}</string>
+				<key>name</key>
+				<string>Перестройтесь левее на {way_name}</string>
+			</dict>
+			<key>slight right</key>
+			<dict>
+				<key>default</key>
+				<string>Перестройтесь правее</string>
+				<key>destination</key>
+				<string>Перестройтесь правее в направлении {destination}</string>
+				<key>name</key>
+				<string>Перестройтесь правее на {way_name}</string>
+			</dict>
+			<key>uturn</key>
+			<dict>
+				<key>default</key>
+				<string>Развернитесь</string>
+				<key>destination</key>
+				<string>Развернитесь в направлении {destination}</string>
+				<key>name</key>
+				<string>Развернитесь на {way_name}</string>
+			</dict>
+		</dict>
+		<key>modes</key>
+		<dict>
+			<key>ferry</key>
+			<dict>
+				<key>default</key>
+				<string>Погрузитесь на паром</string>
+				<key>destination</key>
+				<string>Погрузитесь на паром в направлении {destination}</string>
+				<key>name</key>
+				<string>Погрузитесь на паром {way_name}</string>
+			</dict>
+		</dict>
+		<key>new name</key>
+		<dict>
+			<key>default</key>
+			<dict>
+				<key>default</key>
+				<string>Двигайтесь {modifier}</string>
+				<key>destination</key>
+				<string>Двигайтесь {modifier} в направлении {destination}</string>
+				<key>name</key>
+				<string>Двигайтесь {modifier} на {way_name}</string>
+			</dict>
+			<key>sharp left</key>
+			<dict>
+				<key>default</key>
+				<string>Резко поверните налево</string>
+				<key>destination</key>
+				<string>Резко поверните налево и продолжите движение в направлении {destination}</string>
+				<key>name</key>
+				<string>Резко поверните налево на {way_name}</string>
+			</dict>
+			<key>sharp right</key>
+			<dict>
+				<key>default</key>
+				<string>Резко поверните направо</string>
+				<key>destination</key>
+				<string>Резко поверните направо и продолжите движение в направлении {destination}</string>
+				<key>name</key>
+				<string>Резко поверните направо на {way_name}</string>
+			</dict>
+			<key>slight left</key>
+			<dict>
+				<key>default</key>
+				<string>Плавно поверните налево</string>
+				<key>destination</key>
+				<string>Плавно поверните налево в направлении {destination}</string>
+				<key>name</key>
+				<string>Плавно поверните налево на {way_name}</string>
+			</dict>
+			<key>slight right</key>
+			<dict>
+				<key>default</key>
+				<string>Плавно поверните направо</string>
+				<key>destination</key>
+				<string>Плавно поверните направо в направлении {destination}</string>
+				<key>name</key>
+				<string>Плавно поверните направо на {way_name}</string>
+			</dict>
+			<key>uturn</key>
+			<dict>
+				<key>default</key>
+				<string>Развернитесь</string>
+				<key>destination</key>
+				<string>Развернитесь и продолжите движение в направлении {destination}</string>
+				<key>name</key>
+				<string>Развернитесь на {way_name}</string>
+			</dict>
+		</dict>
+		<key>notification</key>
+		<dict>
+			<key>default</key>
+			<dict>
+				<key>default</key>
+				<string>Двигайтесь {modifier}</string>
+				<key>destination</key>
+				<string>Двигайтесь {modifier} в направлении {destination}</string>
+				<key>name</key>
+				<string>Двигайтесь {modifier} по {way_name}</string>
+			</dict>
+			<key>uturn</key>
+			<dict>
+				<key>default</key>
+				<string>Развернитесь</string>
+				<key>destination</key>
+				<string>Развернитесь и продолжите движение в направлении {destination}</string>
+				<key>name</key>
+				<string>Развернитесь на {way_name}</string>
+			</dict>
+		</dict>
+		<key>off ramp</key>
+		<dict>
+			<key>default</key>
+			<dict>
+				<key>default</key>
+				<string>Сверните на съезд</string>
+				<key>destination</key>
+				<string>Сверните на съезд в направлении {destination}</string>
+				<key>name</key>
+				<string>Сверните на съезд на {way_name}</string>
+			</dict>
+			<key>left</key>
+			<dict>
+				<key>default</key>
+				<string>Сверните на левый съезд</string>
+				<key>destination</key>
+				<string>Сверните на правый съезд в направлении {destination}</string>
+				<key>name</key>
+				<string>Сверните на левый съезд на {way_name}</string>
+			</dict>
+			<key>right</key>
+			<dict>
+				<key>default</key>
+				<string>Сверните на правый съезд</string>
+				<key>destination</key>
+				<string>Сверните на правый съезд в направлении {destination}</string>
+				<key>name</key>
+				<string>Сверните на правый съезд на {way_name}</string>
+			</dict>
+			<key>sharp left</key>
+			<dict>
+				<key>default</key>
+				<string>Поверните на левый съезд</string>
+				<key>destination</key>
+				<string>Поверните на левый съезд в направлении {destination}</string>
+				<key>name</key>
+				<string>Поверните на левый съезд на {way_name}</string>
+			</dict>
+			<key>sharp right</key>
+			<dict>
+				<key>default</key>
+				<string>Поверните на правый съезд</string>
+				<key>destination</key>
+				<string>Поверните на правый съезд в направлении {destination}</string>
+				<key>name</key>
+				<string>Поверните на правый съезд на {way_name}</string>
+			</dict>
+			<key>slight left</key>
+			<dict>
+				<key>default</key>
+				<string>Плавно сверните на левый съезд</string>
+				<key>destination</key>
+				<string>Плавно сверните на левый съезд в направлении {destination}</string>
+				<key>name</key>
+				<string>Плавно сверните на левый съезд на {way_name}</string>
+			</dict>
+			<key>slight right</key>
+			<dict>
+				<key>default</key>
+				<string>Плавно сверните на правый съезд</string>
+				<key>destination</key>
+				<string>Плавно сверните на правый съезд в направлении {destination}</string>
+				<key>name</key>
+				<string>Плавно сверните на правый съезд на {way_name}</string>
+			</dict>
+		</dict>
+		<key>on ramp</key>
+		<dict>
+			<key>default</key>
+			<dict>
+				<key>default</key>
+				<string>Сверните на автомагистраль</string>
+				<key>destination</key>
+				<string>Сверните на въезд на автомагистраль в направлении {destination}</string>
+				<key>name</key>
+				<string>Сверните на въезд на {way_name}</string>
+			</dict>
+			<key>left</key>
+			<dict>
+				<key>default</key>
+				<string>Сверните на левый въезд на автомагистраль</string>
+				<key>destination</key>
+				<string>Сверните на левый въезд на автомагистраль в направлении {destination}</string>
+				<key>name</key>
+				<string>Сверните на левый въезд на {way_name}</string>
+			</dict>
+			<key>right</key>
+			<dict>
+				<key>default</key>
+				<string>Сверните на правый въезд на автомагистраль</string>
+				<key>destination</key>
+				<string>Сверните на правый въезд на автомагистраль в направлении {destination}</string>
+				<key>name</key>
+				<string>Сверните на правый въезд на {way_name}</string>
+			</dict>
+			<key>sharp left</key>
+			<dict>
+				<key>default</key>
+				<string>Поверните на левый въезд на автомагистраль</string>
+				<key>destination</key>
+				<string>Поверните на левый въезд на автомагистраль в направлении {destination}</string>
+				<key>name</key>
+				<string>Поверните на левый въезд на {way_name}</string>
+			</dict>
+			<key>sharp right</key>
+			<dict>
+				<key>default</key>
+				<string>Поверните на правый въезд на автомагистраль</string>
+				<key>destination</key>
+				<string>Поверните на правый въезд на автомагистраль в направлении {destination}</string>
+				<key>name</key>
+				<string>Поверните на правый въезд на {way_name}</string>
+			</dict>
+			<key>slight left</key>
+			<dict>
+				<key>default</key>
+				<string>Перестройтесь левее на въезд на автомагистраль</string>
+				<key>destination</key>
+				<string>Перестройтесь левее на автомагистраль в направлении {destination}</string>
+				<key>name</key>
+				<string>Перестройтесь левее на {way_name}</string>
+			</dict>
+			<key>slight right</key>
+			<dict>
+				<key>default</key>
+				<string>Перестройтесь правее на въезд на автомагистраль</string>
+				<key>destination</key>
+				<string>Перестройтесь правее на автомагистраль в направлении {destination}</string>
+				<key>name</key>
+				<string>Перестройтесь правее на {way_name}</string>
+			</dict>
+		</dict>
+		<key>rotary</key>
+		<dict>
+			<key>default</key>
+			<dict>
+				<key>default</key>
+				<dict>
+					<key>default</key>
+					<string>Продолжите движение по круговой развязке</string>
+					<key>destination</key>
+					<string>На круговой  развязке сверните в направлении {destination}</string>
+					<key>name</key>
+					<string>На круговой  развязке сверните на {way_name}</string>
+				</dict>
+				<key>exit</key>
+				<dict>
+					<key>default</key>
+					<string>На круговой развязке сверните на {exit_number} съезд</string>
+					<key>destination</key>
+					<string>На круговой развязке сверните на {exit_number} съезд в направлении {destination}</string>
+					<key>name</key>
+					<string>На круговой развязке сверните на {exit_number} съезд на {way_name}</string>
+				</dict>
+				<key>name</key>
+				<dict>
+					<key>default</key>
+					<string>Продолжите движение по {rotary_name} с круговым движением</string>
+					<key>destination</key>
+					<string>На {rotary_name} с круговым движением сверните в направлении {destination}</string>
+					<key>name</key>
+					<string>На {rotary_name} с круговым движением сверните на {way_name}</string>
+				</dict>
+				<key>name_exit</key>
+				<dict>
+					<key>default</key>
+					<string>На {rotary_name} с круговым движением сверните на {exit_number} съезд</string>
+					<key>destination</key>
+					<string>На {rotary_name} с круговым движением сверните на {exit_number} съезд в направлении {destination}</string>
+					<key>name</key>
+					<string>На {rotary_name} с круговым движением сверните на {exit_number} съезд на {way_name}</string>
+				</dict>
+			</dict>
+		</dict>
+		<key>roundabout</key>
+		<dict>
+			<key>default</key>
+			<dict>
+				<key>default</key>
+				<dict>
+					<key>default</key>
+					<string>Продолжите движение по круговой развязке</string>
+					<key>destination</key>
+					<string>На круговой развязке сверните в направлении {destination}</string>
+					<key>name</key>
+					<string>На круговой развязке сверните на {way_name}</string>
+				</dict>
+				<key>exit</key>
+				<dict>
+					<key>default</key>
+					<string>На круговой  развязке сверните на {exit_number} съезд</string>
+					<key>destination</key>
+					<string>На круговой  развязке сверните на {exit_number} съезд в направлении {destination}</string>
+					<key>name</key>
+					<string>На круговой  развязке сверните на {exit_number} съезд на {way_name}</string>
+				</dict>
+			</dict>
+		</dict>
+		<key>roundabout turn</key>
+		<dict>
+			<key>default</key>
+			<dict>
+				<key>default</key>
+				<string>На круговой развязке двигайтесь {modifier}</string>
+				<key>destination</key>
+				<string>На круговой развязке двигайтесь {modifier} в направлении {destination}</string>
+				<key>name</key>
+				<string>На круговой развязке двигайтесь {modifier} на {way_name}</string>
+			</dict>
+			<key>left</key>
+			<dict>
+				<key>default</key>
+				<string>На круговой развязке сверните налево</string>
+				<key>destination</key>
+				<string>На круговой развязке сверните налево в направлении {destination}</string>
+				<key>name</key>
+				<string>На круговой развязке сверните налево на {way_name}</string>
+			</dict>
+			<key>right</key>
+			<dict>
+				<key>default</key>
+				<string>На круговой развязке сверните направо</string>
+				<key>destination</key>
+				<string>На круговой развязке сверните направо в направлении {destination}</string>
+				<key>name</key>
+				<string>На круговой развязке сверните направо на {way_name}</string>
+			</dict>
+			<key>straight</key>
+			<dict>
+				<key>default</key>
+				<string>На круговой развязке двигайтесь прямо</string>
+				<key>destination</key>
+				<string>На круговой развязке двигайтесь в направлении {destination}</string>
+				<key>name</key>
+				<string>На круговой развязке двигайтесь по {way_name}</string>
+			</dict>
+		</dict>
+		<key>turn</key>
+		<dict>
+			<key>default</key>
+			<dict>
+				<key>default</key>
+				<string>Двигайтесь {modifier}</string>
+				<key>destination</key>
+				<string>Двигайтесь {modifier}  в направлении {destination}</string>
+				<key>name</key>
+				<string>Двигайтесь {modifier} на {way_name}</string>
+			</dict>
+			<key>left</key>
+			<dict>
+				<key>default</key>
+				<string>Поверните налево</string>
+				<key>destination</key>
+				<string>Поверните налево в направлении {destination}</string>
+				<key>name</key>
+				<string>Поверните налево на {way_name}</string>
+			</dict>
+			<key>right</key>
+			<dict>
+				<key>default</key>
+				<string>Поверните направо</string>
+				<key>destination</key>
+				<string>Поверните направо  в направлении {destination}</string>
+				<key>name</key>
+				<string>Поверните направо на {way_name}</string>
+			</dict>
+			<key>straight</key>
+			<dict>
+				<key>default</key>
+				<string>Двигайтесь прямо</string>
+				<key>destination</key>
+				<string>Двигайтесь в направлении {destination}</string>
+				<key>name</key>
+				<string>Двигайтесь по {way_name}</string>
+			</dict>
+		</dict>
+		<key>use lane</key>
+		<dict>
+			<key>default</key>
+			<dict>
+				<key>default</key>
+				<string>{lane_instruction}</string>
+			</dict>
+			<key>no_lanes</key>
+			<dict>
+				<key>default</key>
+				<string>Продолжайте движение прямо</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

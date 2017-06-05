@@ -41,5 +41,14 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>MGLMapboxAccessToken</key>
+	<string>pk.eyJ1IjoiYWxpdW11amliIiwiYSI6ImNpbjF5MmhlejAwcjJ2OWx5Y3Nsamw0amQifQ.UxOkjjZDhSmljGz3RKmQ6Q</string>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>We&apos;d need your location data, obviously.</string>
 </dict>
 </plist>

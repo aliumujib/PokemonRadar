@@ -1,0 +1,66 @@
+PODS:
+  - Alamofire (4.4.0)
+  - AWSCore (2.5.8)
+  - AWSPolly (2.5.8):
+    - AWSCore (= 2.5.8)
+  - Bolts/Tasks (1.8.4)
+  - GoogleMaps/Base (2.3.0)
+  - GooglePlaces (2.3.0):
+    - GoogleMaps/Base (= 2.3.0)
+  - Mapbox-iOS-SDK (3.5.4)
+  - MapboxCoreNavigation (0.4.0):
+    - MapboxDirections.swift (~> 0.9.0)
+    - OSRMTextInstructions (~> 0.1.1)
+  - MapboxDirections.swift (0.9.1):
+    - Polyline (~> 4.1)
+  - MapboxNavigation (0.4.0):
+    - AWSPolly (~> 2.5)
+    - Mapbox-iOS-SDK (~> 3.5)
+    - MapboxCoreNavigation (= 0.4.0)
+    - MapboxDirections.swift (~> 0.9.0)
+    - OSRMTextInstructions (~> 0.1.2)
+    - Pulley (~> 1.3)
+    - SDWebImage (~> 4.0)
+  - OSRMTextInstructions (0.1.2):
+    - MapboxDirections.swift (~> 0.9)
+  - Parse (1.14.4):
+    - Bolts/Tasks (~> 1.8)
+  - Polyline (4.1.1)
+  - Pulley (1.4)
+  - SDWebImage (4.0.0):
+    - SDWebImage/Core (= 4.0.0)
+  - SDWebImage/Core (4.0.0)
+  - SnapKit (3.2.0)
+  - Xia (0.0.4):
+    - SnapKit (~> 3.2.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - GooglePlaces
+  - Mapbox-iOS-SDK (~> 3.5)
+  - MapboxNavigation (~> 0.4.0)
+  - Parse
+  - Xia
+
+SPEC CHECKSUMS:
+  Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
+  AWSCore: cf101c44d2cc5da32abc27d5529cddc63c010415
+  AWSPolly: ca97cf9a0b900a5bb4ca6b9bd297daf851540d48
+  Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
+  GoogleMaps: 340a6a0bebd17c2db8abcd3921976c7c53c86cb8
+  GooglePlaces: 74d322c74184ea4576184089b496d291cf0dcd38
+  Mapbox-iOS-SDK: 81197829dcf4c4ed9a593b7a95462881b5f1309a
+  MapboxCoreNavigation: bbf134650906b0d4fe2c92e60d012d11365e5a2e
+  MapboxDirections.swift: e2da56f86c345f0b4857448f14ca3ed9d8fcbb29
+  MapboxNavigation: e4d693ad2f546f7d9aa9dd4350ece411f937a1d9
+  OSRMTextInstructions: d96a56bb920d4ed1fef7575191118e4ea7042eff
+  Parse: b0aa91d2c435e53d4a9af26e741e014c9b35c42e
+  Polyline: 381d1e699fd12508f97cfc468478dfbab67edf1f
+  Pulley: 3d47a5ca819b8f35a63e9a4811d35035d484d1d9
+  SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
+  SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
+  Xia: 5664f5bbd7f16cc490c38edb30614289c02d203b
+
+PODFILE CHECKSUM: 9a8a1cd2b98e8ac8b7d2fa44c55a087124ab6b8c
+
+COCOAPODS: 1.2.1

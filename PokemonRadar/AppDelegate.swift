@@ -7,15 +7,41 @@
 //
 
 import UIKit
+import GooglePlaces
+import MapboxNavigation
+import Parse
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    //var geoFire: GeoFire!
+    
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+       // FirebaseApp.init()
+        GMSPlacesClient.provideAPIKey("AIzaSyBSxrz9ArQrMGHFswBHSgHOF_9zKallYjE")
+        
+        let style = Style()
+        style.maneuverViewHeight = 80
+        style.primaryTextColor = .white
+        style.lineColor = PRIMARY_COLOR
+        style.headerBackgroundColor = PRIMARY_COLOR
+        style.cellTitleLabelFont = .preferredFont(forTextStyle: .headline)
+        style.apply()
+        
+        let configuration = ParseClientConfiguration {
+            $0.applicationId = "rLGJhexPumGtqbSAq3Ifj5uQ0EO0p9Qe6pyICQ7Z"
+            $0.clientKey = "1f40pp28ckws7YuUFGoUnfe1Iyo5PixEy1ymEATE"
+            $0.server = "https://parseapi.back4app.com/"
+        }
+        // Swift 3.0
+        Parse.initialize(with: configuration)
+        
+        PFUser.enableAutomaticUser()
+        
         return true
     }
 

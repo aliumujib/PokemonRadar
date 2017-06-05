@@ -1,0 +1,713 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>meta</key>
+	<dict>
+		<key>capitalizeFirstLetter</key>
+		<true/>
+	</dict>
+	<key>v5</key>
+	<dict>
+		<key>arrive</key>
+		<dict>
+			<key>default</key>
+			<dict>
+				<key>default</key>
+				<string>Je bent gearriveerd op de {nth} bestemming.</string>
+			</dict>
+			<key>left</key>
+			<dict>
+				<key>default</key>
+				<string>Je bent gearriveerd. De {nth} bestemming bevindt zich links.</string>
+			</dict>
+			<key>right</key>
+			<dict>
+				<key>default</key>
+				<string>Je bent gearriveerd. De {nth} bestemming bevindt zich rechts.</string>
+			</dict>
+			<key>sharp left</key>
+			<dict>
+				<key>default</key>
+				<string>Je bent gearriveerd. De {nth} bestemming bevindt zich links.</string>
+			</dict>
+			<key>sharp right</key>
+			<dict>
+				<key>default</key>
+				<string>Je bent gearriveerd. De {nth} bestemming bevindt zich rechts.</string>
+			</dict>
+			<key>slight left</key>
+			<dict>
+				<key>default</key>
+				<string>Je bent gearriveerd. De {nth} bestemming bevindt zich links.</string>
+			</dict>
+			<key>slight right</key>
+			<dict>
+				<key>default</key>
+				<string>Je bent gearriveerd. De {nth} bestemming bevindt zich rechts.</string>
+			</dict>
+			<key>straight</key>
+			<dict>
+				<key>default</key>
+				<string>Je bent gearriveerd. De {nth} bestemming bevindt zich voor je.</string>
+			</dict>
+		</dict>
+		<key>constants</key>
+		<dict>
+			<key>direction</key>
+			<dict>
+				<key>east</key>
+				<string>oost</string>
+				<key>north</key>
+				<string>noord</string>
+				<key>northeast</key>
+				<string>noordoost</string>
+				<key>northwest</key>
+				<string>noordwest</string>
+				<key>south</key>
+				<string>zuid</string>
+				<key>southeast</key>
+				<string>zuidoost</string>
+				<key>southwest</key>
+				<string>zuidwest</string>
+				<key>west</key>
+				<string>west</string>
+			</dict>
+			<key>lanes</key>
+			<dict>
+				<key>ox</key>
+				<string>Links aanhouden</string>
+				<key>oxo</key>
+				<string>Links of rechts blijven</string>
+				<key>xo</key>
+				<string>Rechts aanhouden</string>
+				<key>xox</key>
+				<string>In het midden blijven</string>
+			</dict>
+			<key>modifier</key>
+			<dict>
+				<key>left</key>
+				<string>links</string>
+				<key>right</key>
+				<string>rechts</string>
+				<key>sharp left</key>
+				<string>linksaf</string>
+				<key>sharp right</key>
+				<string>rechtsaf</string>
+				<key>slight left</key>
+				<string>links</string>
+				<key>slight right</key>
+				<string>rechts</string>
+				<key>straight</key>
+				<string>rechtdoor</string>
+				<key>uturn</key>
+				<string>omkeren</string>
+			</dict>
+			<key>ordinalize</key>
+			<dict>
+				<key>1</key>
+				<string>eerste</string>
+				<key>10</key>
+				<string>tiende</string>
+				<key>2</key>
+				<string>tweede</string>
+				<key>3</key>
+				<string>derde</string>
+				<key>4</key>
+				<string>vierde</string>
+				<key>5</key>
+				<string>vijfde</string>
+				<key>6</key>
+				<string>zesde</string>
+				<key>7</key>
+				<string>zevende</string>
+				<key>8</key>
+				<string>achtste</string>
+				<key>9</key>
+				<string>negende</string>
+			</dict>
+		</dict>
+		<key>continue</key>
+		<dict>
+			<key>default</key>
+			<dict>
+				<key>default</key>
+				<string>Ga {modifier}</string>
+				<key>destination</key>
+				<string>Ga {modifier} richting {destination}</string>
+				<key>name</key>
+				<string>Ga {modifier} naar {way_name}</string>
+			</dict>
+			<key>slight left</key>
+			<dict>
+				<key>default</key>
+				<string>Links aanhouden</string>
+				<key>destination</key>
+				<string>Links aanhouden richting {destination}</string>
+				<key>name</key>
+				<string>Links aanhouden naar {way_name}</string>
+			</dict>
+			<key>slight right</key>
+			<dict>
+				<key>default</key>
+				<string>Rechts aanhouden</string>
+				<key>destination</key>
+				<string>Rechts aanhouden richting {destination}</string>
+				<key>name</key>
+				<string>Rechts aanhouden naar {way_name}</string>
+			</dict>
+			<key>straight</key>
+			<dict>
+				<key>default</key>
+				<string>Ga rechtdoor</string>
+				<key>destination</key>
+				<string>Ga rechtdoor richting {destination}</string>
+				<key>name</key>
+				<string>Ga rechtdoor naar {way_name}</string>
+			</dict>
+			<key>uturn</key>
+			<dict>
+				<key>default</key>
+				<string>Keer om</string>
+				<key>destination</key>
+				<string>Keer om richting {destination}</string>
+				<key>name</key>
+				<string>Keer om naar {way_name}</string>
+			</dict>
+		</dict>
+		<key>depart</key>
+		<dict>
+			<key>default</key>
+			<dict>
+				<key>default</key>
+				<string>Vertrek in {direction}elijke richting</string>
+				<key>name</key>
+				<string>Neem {way_name} in {direction}elijke richting</string>
+			</dict>
+		</dict>
+		<key>end of road</key>
+		<dict>
+			<key>default</key>
+			<dict>
+				<key>default</key>
+				<string>Ga {modifier}</string>
+				<key>destination</key>
+				<string>Ga {modifier} richting {destination}</string>
+				<key>name</key>
+				<string>Ga {modifier} naar {way_name}</string>
+			</dict>
+			<key>straight</key>
+			<dict>
+				<key>default</key>
+				<string>Ga in de aangegeven richting</string>
+				<key>destination</key>
+				<string>Ga richting {destination}</string>
+				<key>name</key>
+				<string>Ga naar {way_name}</string>
+			</dict>
+			<key>uturn</key>
+			<dict>
+				<key>default</key>
+				<string>Keer om</string>
+				<key>destination</key>
+				<string>Keer om richting {destination}</string>
+				<key>name</key>
+				<string>Keer om naar {way_name}</string>
+			</dict>
+		</dict>
+		<key>fork</key>
+		<dict>
+			<key>default</key>
+			<dict>
+				<key>default</key>
+				<string>Ga {modifier} op de splitsing</string>
+				<key>destination</key>
+				<string>Ga {modifier} op de splitsing richting {destination}</string>
+				<key>name</key>
+				<string>Ga {modifier} op de splitsing naar {way_name}</string>
+			</dict>
+			<key>sharp left</key>
+			<dict>
+				<key>default</key>
+				<string>Linksaf op de splitsing</string>
+				<key>destination</key>
+				<string>Linksaf op de splitsing richting {destination}</string>
+				<key>name</key>
+				<string>Linksaf op de splitsing naar {way_name}</string>
+			</dict>
+			<key>sharp right</key>
+			<dict>
+				<key>default</key>
+				<string>Rechtsaf op de splitsing</string>
+				<key>destination</key>
+				<string>Rechtsaf op de splitsing richting {destination}</string>
+				<key>name</key>
+				<string>Rechtsaf op de splitsing naar {way_name}</string>
+			</dict>
+			<key>slight left</key>
+			<dict>
+				<key>default</key>
+				<string>Links aanhouden op de splitsing</string>
+				<key>destination</key>
+				<string>Links aanhouden op de splitsing richting {destination}</string>
+				<key>name</key>
+				<string>Links aanhouden op de splitsing naar {way_name}</string>
+			</dict>
+			<key>slight right</key>
+			<dict>
+				<key>default</key>
+				<string>Rechts aanhouden op de splitsing</string>
+				<key>destination</key>
+				<string>Rechts aanhouden op de splitsing richting {destination}</string>
+				<key>name</key>
+				<string>Rechts aanhouden op de splitsing naar {way_name}</string>
+			</dict>
+			<key>uturn</key>
+			<dict>
+				<key>default</key>
+				<string>Keer om</string>
+				<key>destination</key>
+				<string>Keer om richting {destination}</string>
+				<key>name</key>
+				<string>Keer om naar {way_name}</string>
+			</dict>
+		</dict>
+		<key>merge</key>
+		<dict>
+			<key>default</key>
+			<dict>
+				<key>default</key>
+				<string>Bij de splitsing {modifier}</string>
+				<key>destination</key>
+				<string>Bij de splitsing {modifier} richting {destination}</string>
+				<key>name</key>
+				<string>Bij de splitsing {modifier} naar {way_name}</string>
+			</dict>
+			<key>sharp left</key>
+			<dict>
+				<key>default</key>
+				<string>Bij de splitsing linksaf</string>
+				<key>destination</key>
+				<string>Bij de splitsing linksaf richting {destination}</string>
+				<key>name</key>
+				<string>Bij de splitsing linksaf naar {way_name}</string>
+			</dict>
+			<key>sharp right</key>
+			<dict>
+				<key>default</key>
+				<string>Bij de splitsing rechtsaf</string>
+				<key>destination</key>
+				<string>Bij de splitsing rechtsaf richting {destination}</string>
+				<key>name</key>
+				<string>Bij de splitsing rechtsaf naar {way_name}</string>
+			</dict>
+			<key>slight left</key>
+			<dict>
+				<key>default</key>
+				<string>Bij de splitsing links aanhouden</string>
+				<key>destination</key>
+				<string>Bij de splitsing links aanhouden richting {destination}</string>
+				<key>name</key>
+				<string>Bij de splitsing links aanhouden naar {way_name}</string>
+			</dict>
+			<key>slight right</key>
+			<dict>
+				<key>default</key>
+				<string>Bij de splitsing rechts aanhouden</string>
+				<key>destination</key>
+				<string>Bij de splitsing rechts aanhouden richting {destination}</string>
+				<key>name</key>
+				<string>Bij de splitsing rechts aanhouden naar {way_name}</string>
+			</dict>
+			<key>uturn</key>
+			<dict>
+				<key>default</key>
+				<string>Keer om</string>
+				<key>destination</key>
+				<string>Keer om richting {destination}</string>
+				<key>name</key>
+				<string>Keer om naar {way_name}</string>
+			</dict>
+		</dict>
+		<key>modes</key>
+		<dict>
+			<key>ferry</key>
+			<dict>
+				<key>default</key>
+				<string>Neem het veer</string>
+				<key>destination</key>
+				<string>Neem het veer naar {destination}</string>
+				<key>name</key>
+				<string>Neem het veer {way_name}</string>
+			</dict>
+		</dict>
+		<key>new name</key>
+		<dict>
+			<key>default</key>
+			<dict>
+				<key>default</key>
+				<string>Ga {modifier}</string>
+				<key>destination</key>
+				<string>Ga {modifier} richting {destination}</string>
+				<key>name</key>
+				<string>Ga {modifier} naar {way_name}</string>
+			</dict>
+			<key>sharp left</key>
+			<dict>
+				<key>default</key>
+				<string>Linksaf</string>
+				<key>destination</key>
+				<string>Linksaf richting {destination}</string>
+				<key>name</key>
+				<string>Linksaf naar {way_name}</string>
+			</dict>
+			<key>sharp right</key>
+			<dict>
+				<key>default</key>
+				<string>Rechtsaf</string>
+				<key>destination</key>
+				<string>Rechtsaf richting {destination}</string>
+				<key>name</key>
+				<string>Rechtsaf naar {way_name}</string>
+			</dict>
+			<key>slight left</key>
+			<dict>
+				<key>default</key>
+				<string>Links aanhouden</string>
+				<key>destination</key>
+				<string>Links aanhouden richting {destination}</string>
+				<key>name</key>
+				<string>Links aanhouden naar {way_name}</string>
+			</dict>
+			<key>slight right</key>
+			<dict>
+				<key>default</key>
+				<string>Rechts aanhouden</string>
+				<key>destination</key>
+				<string>Rechts aanhouden richting {destination}</string>
+				<key>name</key>
+				<string>Rechts aanhouden naar {way_name}</string>
+			</dict>
+			<key>uturn</key>
+			<dict>
+				<key>default</key>
+				<string>Keer om</string>
+				<key>destination</key>
+				<string>Keer om richting {destination}</string>
+				<key>name</key>
+				<string>Keer om naar {way_name}</string>
+			</dict>
+		</dict>
+		<key>notification</key>
+		<dict>
+			<key>default</key>
+			<dict>
+				<key>default</key>
+				<string>Ga {modifier}</string>
+				<key>destination</key>
+				<string>Ga {modifier} richting {destination}</string>
+				<key>name</key>
+				<string>Ga {modifier} naar {way_name}</string>
+			</dict>
+			<key>uturn</key>
+			<dict>
+				<key>default</key>
+				<string>Keer om</string>
+				<key>destination</key>
+				<string>Keer om richting {destination}</string>
+				<key>name</key>
+				<string>Keer om naar {way_name}</string>
+			</dict>
+		</dict>
+		<key>off ramp</key>
+		<dict>
+			<key>default</key>
+			<dict>
+				<key>default</key>
+				<string>Neem de afrit</string>
+				<key>destination</key>
+				<string>Neem de afrit richting {destination}</string>
+				<key>name</key>
+				<string>Neem de afrit naar {way_name}</string>
+			</dict>
+			<key>left</key>
+			<dict>
+				<key>default</key>
+				<string>Neem de afrit links</string>
+				<key>destination</key>
+				<string>Neem de afrit links richting {destination}</string>
+				<key>name</key>
+				<string>Neem de afrit links naar {way_name}</string>
+			</dict>
+			<key>right</key>
+			<dict>
+				<key>default</key>
+				<string>Neem de afrit rechts</string>
+				<key>destination</key>
+				<string>Neem de afrit rechts richting {destination}</string>
+				<key>name</key>
+				<string>Neem de afrit rechts naar {way_name}</string>
+			</dict>
+			<key>sharp left</key>
+			<dict>
+				<key>default</key>
+				<string>Neem de afrit links</string>
+				<key>destination</key>
+				<string>Neem de afrit links richting {destination}</string>
+				<key>name</key>
+				<string>Neem de afrit links naar {way_name}</string>
+			</dict>
+			<key>sharp right</key>
+			<dict>
+				<key>default</key>
+				<string>Neem de afrit rechts</string>
+				<key>destination</key>
+				<string>Neem de afrit rechts richting {destination}</string>
+				<key>name</key>
+				<string>Neem de afrit rechts naar {way_name}</string>
+			</dict>
+			<key>slight left</key>
+			<dict>
+				<key>default</key>
+				<string>Neem de afrit links</string>
+				<key>destination</key>
+				<string>Neem de afrit links richting {destination}</string>
+				<key>name</key>
+				<string>Neem de afrit links naar {way_name}</string>
+			</dict>
+			<key>slight right</key>
+			<dict>
+				<key>default</key>
+				<string>Neem de afrit rechts</string>
+				<key>destination</key>
+				<string>Neem de afrit rechts richting {destination}</string>
+				<key>name</key>
+				<string>Neem de afrit rechts naar {way_name}</string>
+			</dict>
+		</dict>
+		<key>on ramp</key>
+		<dict>
+			<key>default</key>
+			<dict>
+				<key>default</key>
+				<string>Neem de oprit</string>
+				<key>destination</key>
+				<string>Neem de oprit richting {destination}</string>
+				<key>name</key>
+				<string>Neem de oprit naar {way_name}</string>
+			</dict>
+			<key>left</key>
+			<dict>
+				<key>default</key>
+				<string>Neem de oprit links</string>
+				<key>destination</key>
+				<string>Neem de oprit links richting {destination}</string>
+				<key>name</key>
+				<string>Neem de oprit links naar {way_name}</string>
+			</dict>
+			<key>right</key>
+			<dict>
+				<key>default</key>
+				<string>Neem de oprit rechts</string>
+				<key>destination</key>
+				<string>Neem de oprit rechts richting {destination}</string>
+				<key>name</key>
+				<string>Neem de oprit rechts naar {way_name}</string>
+			</dict>
+			<key>sharp left</key>
+			<dict>
+				<key>default</key>
+				<string>Neem de oprit links</string>
+				<key>destination</key>
+				<string>Neem de oprit links richting {destination}</string>
+				<key>name</key>
+				<string>Neem de oprit links naar {way_name}</string>
+			</dict>
+			<key>sharp right</key>
+			<dict>
+				<key>default</key>
+				<string>Neem de oprit rechts</string>
+				<key>destination</key>
+				<string>Neem de oprit rechts richting {destination}</string>
+				<key>name</key>
+				<string>Neem de oprit rechts naar {way_name}</string>
+			</dict>
+			<key>slight left</key>
+			<dict>
+				<key>default</key>
+				<string>Neem de oprit links</string>
+				<key>destination</key>
+				<string>Neem de oprit links richting {destination}</string>
+				<key>name</key>
+				<string>Neem de oprit links naar {way_name}</string>
+			</dict>
+			<key>slight right</key>
+			<dict>
+				<key>default</key>
+				<string>Neem de oprit rechts</string>
+				<key>destination</key>
+				<string>Neem de oprit rechts richting {destination}</string>
+				<key>name</key>
+				<string>Neem de oprit rechts naar {way_name}</string>
+			</dict>
+		</dict>
+		<key>rotary</key>
+		<dict>
+			<key>default</key>
+			<dict>
+				<key>default</key>
+				<dict>
+					<key>default</key>
+					<string>Ga het knooppunt op</string>
+					<key>destination</key>
+					<string>Verlaat het knooppunt richting {destination}</string>
+					<key>name</key>
+					<string>Verlaat het knooppunt naar {way_name}</string>
+				</dict>
+				<key>exit</key>
+				<dict>
+					<key>default</key>
+					<string>Ga het knooppunt op en neem afslag {exit_number}</string>
+					<key>destination</key>
+					<string>Ga het knooppunt op en neem afslag {exit_number} richting {destination}</string>
+					<key>name</key>
+					<string>Ga het knooppunt op en neem afslag {exit_number} naar {way_name}</string>
+				</dict>
+				<key>name</key>
+				<dict>
+					<key>default</key>
+					<string>Ga het knooppunt {rotary_name} op</string>
+					<key>destination</key>
+					<string>Verlaat het knooppunt {rotary_name} richting {destination}</string>
+					<key>name</key>
+					<string>Verlaat het knooppunt {rotary_name} naar {way_name}</string>
+				</dict>
+				<key>name_exit</key>
+				<dict>
+					<key>default</key>
+					<string>Ga het knooppunt {rotary_name} op en neem afslag {exit_number}</string>
+					<key>destination</key>
+					<string>Ga het knooppunt {rotary_name} op en neem afslag {exit_number} richting {destination}</string>
+					<key>name</key>
+					<string>Ga het knooppunt {rotary_name} op en neem afslag {exit_number} naar {way_name}</string>
+				</dict>
+			</dict>
+		</dict>
+		<key>roundabout</key>
+		<dict>
+			<key>default</key>
+			<dict>
+				<key>default</key>
+				<dict>
+					<key>default</key>
+					<string>Ga de rotonde op</string>
+					<key>destination</key>
+					<string>Verlaat de rotonde richting {destination}</string>
+					<key>name</key>
+					<string>Verlaat de rotonde naar {way_name}</string>
+				</dict>
+				<key>exit</key>
+				<dict>
+					<key>default</key>
+					<string>Ga de rotonde op en neem afslag {exit_number}</string>
+					<key>destination</key>
+					<string>Ga de rotonde op en neem afslag {exit_number} richting {destination}</string>
+					<key>name</key>
+					<string>Ga de rotonde op en neem afslag {exit_number} naar {way_name}</string>
+				</dict>
+			</dict>
+		</dict>
+		<key>roundabout turn</key>
+		<dict>
+			<key>default</key>
+			<dict>
+				<key>default</key>
+				<string>Ga {modifier} op de rotonde</string>
+				<key>destination</key>
+				<string>Ga {modifier} op de rotonde richting {destination}</string>
+				<key>name</key>
+				<string>Ga {modifier} op de rotonde naar {way_name}</string>
+			</dict>
+			<key>left</key>
+			<dict>
+				<key>default</key>
+				<string>Ga links op de rotonde</string>
+				<key>destination</key>
+				<string>Ga links op de rotonde richting {destination}</string>
+				<key>name</key>
+				<string>Ga links op de rotonde naar {way_name}</string>
+			</dict>
+			<key>right</key>
+			<dict>
+				<key>default</key>
+				<string>Ga rechts op de rotonde</string>
+				<key>destination</key>
+				<string>Ga rechts op de rotonde richting {destination}</string>
+				<key>name</key>
+				<string>Ga rechts op de rotonde naar {way_name}</string>
+			</dict>
+			<key>straight</key>
+			<dict>
+				<key>default</key>
+				<string>Rechtdoor op de rotonde</string>
+				<key>destination</key>
+				<string>Rechtdoor op de rotonde richting {destination}</string>
+				<key>name</key>
+				<string>Rechtdoor op de rotonde naar {way_name}</string>
+			</dict>
+		</dict>
+		<key>turn</key>
+		<dict>
+			<key>default</key>
+			<dict>
+				<key>default</key>
+				<string>Ga {modifier}</string>
+				<key>destination</key>
+				<string>Ga {modifier} richting {destination}</string>
+				<key>name</key>
+				<string>Ga {modifier} naar {way_name}</string>
+			</dict>
+			<key>left</key>
+			<dict>
+				<key>default</key>
+				<string>Ga linksaf</string>
+				<key>destination</key>
+				<string>Ga linksaf richting {destination}</string>
+				<key>name</key>
+				<string>Ga linksaf naar {way_name}</string>
+			</dict>
+			<key>right</key>
+			<dict>
+				<key>default</key>
+				<string>Ga rechtsaf</string>
+				<key>destination</key>
+				<string>Ga rechtsaf richting {destination}</string>
+				<key>name</key>
+				<string>Ga rechtsaf naar {way_name}</string>
+			</dict>
+			<key>straight</key>
+			<dict>
+				<key>default</key>
+				<string>Ga rechtdoor</string>
+				<key>destination</key>
+				<string>Ga rechtdoor richting {destination}</string>
+				<key>name</key>
+				<string>Ga rechtdoor naar {way_name}</string>
+			</dict>
+		</dict>
+		<key>use lane</key>
+		<dict>
+			<key>default</key>
+			<dict>
+				<key>default</key>
+				<string>{lane_instruction}</string>
+			</dict>
+			<key>no_lanes</key>
+			<dict>
+				<key>default</key>
+				<string>Rechtdoor</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

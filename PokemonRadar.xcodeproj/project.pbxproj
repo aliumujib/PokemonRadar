@@ -7,21 +7,45 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22B050CA6A4FCE1357FD3972 /* Pods_PokemonRadar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8925942EA3E8E3430A9E5D2A /* Pods_PokemonRadar.framework */; };
+		C6005C231EE303E900109FC8 /* CustomAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6005C221EE303E900109FC8 /* CustomAnnotationView.swift */; };
+		C62C1CB41EE4CB370056B154 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62C1CB31EE4CB370056B154 /* LoadingView.swift */; };
+		C6369DC71EE2B83D00C92477 /* SelectorCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6369DC61EE2B83D00C92477 /* SelectorCollectionViewCell.swift */; };
+		C6369DC91EE2BC3100C92477 /* SelectorCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6369DC81EE2BC3100C92477 /* SelectorCollectionViewController.swift */; };
 		C6B22B9E1EE2235300000074 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B22B9D1EE2235300000074 /* AppDelegate.swift */; };
-		C6B22BA01EE2235300000074 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B22B9F1EE2235300000074 /* ViewController.swift */; };
+		C6B22BA01EE2235300000074 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B22B9F1EE2235300000074 /* MapViewController.swift */; };
 		C6B22BA31EE2235400000074 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6B22BA11EE2235400000074 /* Main.storyboard */; };
 		C6B22BA51EE2235400000074 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6B22BA41EE2235400000074 /* Assets.xcassets */; };
 		C6B22BA81EE2235400000074 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6B22BA61EE2235400000074 /* LaunchScreen.storyboard */; };
+		C6B22BB01EE23C6C00000074 /* NavBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B22BAF1EE23C6C00000074 /* NavBarController.swift */; };
+		C6B22BB21EE23D5E00000074 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B22BB11EE23D5E00000074 /* Constants.swift */; };
+		C6B22BB41EE241B200000074 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B22BB31EE241B200000074 /* CardView.swift */; };
+		C6D7106D1EE2CF33003CD5C5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C6D7106C1EE2CF33003CD5C5 /* GoogleService-Info.plist */; };
+		C6EFEC1F1EE491FB009177A4 /* CustomAnnotationPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EFEC1E1EE491FB009177A4 /* CustomAnnotationPoint.swift */; };
+		C6EFEC211EE4A298009177A4 /* PokemonSelectedDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EFEC201EE4A298009177A4 /* PokemonSelectedDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7884D5AA9966095E3D93C970 /* Pods-PokemonRadar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokemonRadar.release.xcconfig"; path = "Pods/Target Support Files/Pods-PokemonRadar/Pods-PokemonRadar.release.xcconfig"; sourceTree = "<group>"; };
+		8925942EA3E8E3430A9E5D2A /* Pods_PokemonRadar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PokemonRadar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6005C221EE303E900109FC8 /* CustomAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAnnotationView.swift; sourceTree = "<group>"; };
+		C62C1CB31EE4CB370056B154 /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		C6369DC61EE2B83D00C92477 /* SelectorCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectorCollectionViewCell.swift; sourceTree = "<group>"; };
+		C6369DC81EE2BC3100C92477 /* SelectorCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectorCollectionViewController.swift; sourceTree = "<group>"; };
 		C6B22B9A1EE2235300000074 /* PokemonRadar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokemonRadar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6B22B9D1EE2235300000074 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C6B22B9F1EE2235300000074 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C6B22B9F1EE2235300000074 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		C6B22BA21EE2235400000074 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C6B22BA41EE2235400000074 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C6B22BA71EE2235400000074 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C6B22BA91EE2235400000074 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6B22BAF1EE23C6C00000074 /* NavBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavBarController.swift; sourceTree = "<group>"; };
+		C6B22BB11EE23D5E00000074 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		C6B22BB31EE241B200000074 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		C6D7106C1EE2CF33003CD5C5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C6EFEC1E1EE491FB009177A4 /* CustomAnnotationPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAnnotationPoint.swift; sourceTree = "<group>"; };
+		C6EFEC201EE4A298009177A4 /* PokemonSelectedDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokemonSelectedDelegate.swift; sourceTree = "<group>"; };
+		DEF1139A8BA144AA5EA30939 /* Pods-PokemonRadar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokemonRadar.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PokemonRadar/Pods-PokemonRadar.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +53,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22B050CA6A4FCE1357FD3972 /* Pods_PokemonRadar.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3241ED2260794772AE102371 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DEF1139A8BA144AA5EA30939 /* Pods-PokemonRadar.debug.xcconfig */,
+				7884D5AA9966095E3D93C970 /* Pods-PokemonRadar.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		92C407EA5DC8BE88A8A4AF2C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8925942EA3E8E3430A9E5D2A /* Pods_PokemonRadar.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C6B22B911EE2234C00000074 = {
 			isa = PBXGroup;
 			children = (
 				C6B22B9C1EE2235300000074 /* PokemonRadar */,
 				C6B22B9B1EE2235300000074 /* Products */,
+				3241ED2260794772AE102371 /* Pods */,
+				92C407EA5DC8BE88A8A4AF2C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +99,55 @@
 			isa = PBXGroup;
 			children = (
 				C6B22B9D1EE2235300000074 /* AppDelegate.swift */,
-				C6B22B9F1EE2235300000074 /* ViewController.swift */,
+				C6D7106B1EE2C963003CD5C5 /* Utils */,
 				C6B22BA11EE2235400000074 /* Main.storyboard */,
+				C62C1CB31EE4CB370056B154 /* LoadingView.swift */,
 				C6B22BA41EE2235400000074 /* Assets.xcassets */,
+				C6D7106C1EE2CF33003CD5C5 /* GoogleService-Info.plist */,
 				C6B22BA61EE2235400000074 /* LaunchScreen.storyboard */,
 				C6B22BA91EE2235400000074 /* Info.plist */,
+				C6D7106A1EE2C930003CD5C5 /* Views */,
+				C6D710691EE2C925003CD5C5 /* Models */,
+				C6D710681EE2C8EE003CD5C5 /* Controller */,
 			);
 			path = PokemonRadar;
+			sourceTree = "<group>";
+		};
+		C6D710681EE2C8EE003CD5C5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C6B22B9F1EE2235300000074 /* MapViewController.swift */,
+				C6369DC81EE2BC3100C92477 /* SelectorCollectionViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		C6D710691EE2C925003CD5C5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		C6D7106A1EE2C930003CD5C5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C6B22BB31EE241B200000074 /* CardView.swift */,
+				C6369DC61EE2B83D00C92477 /* SelectorCollectionViewCell.swift */,
+				C6005C221EE303E900109FC8 /* CustomAnnotationView.swift */,
+				C6EFEC1E1EE491FB009177A4 /* CustomAnnotationPoint.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		C6D7106B1EE2C963003CD5C5 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				C6B22BAF1EE23C6C00000074 /* NavBarController.swift */,
+				C6B22BB11EE23D5E00000074 /* Constants.swift */,
+				C6EFEC201EE4A298009177A4 /* PokemonSelectedDelegate.swift */,
+			);
+			name = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +157,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C6B22BAC1EE2235400000074 /* Build configuration list for PBXNativeTarget "PokemonRadar" */;
 			buildPhases = (
+				70F0933D7586049F2BAA404C /* [CP] Check Pods Manifest.lock */,
 				C6B22B961EE2234D00000074 /* Sources */,
 				C6B22B971EE2234D00000074 /* Frameworks */,
 				C6B22B981EE2234D00000074 /* Resources */,
+				F3CFCB1BAB380510749E3DAF /* [CP] Embed Pods Frameworks */,
+				2A6CE4E407E963189B435B9C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -125,6 +214,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C6B22BA81EE2235400000074 /* LaunchScreen.storyboard in Resources */,
+				C6D7106D1EE2CF33003CD5C5 /* GoogleService-Info.plist in Resources */,
 				C6B22BA51EE2235400000074 /* Assets.xcassets in Resources */,
 				C6B22BA31EE2235400000074 /* Main.storyboard in Resources */,
 			);
@@ -132,13 +222,70 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2A6CE4E407E963189B435B9C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PokemonRadar/Pods-PokemonRadar-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		70F0933D7586049F2BAA404C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F3CFCB1BAB380510749E3DAF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PokemonRadar/Pods-PokemonRadar-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C6B22B961EE2234D00000074 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C6B22BA01EE2235300000074 /* ViewController.swift in Sources */,
+				C6EFEC1F1EE491FB009177A4 /* CustomAnnotationPoint.swift in Sources */,
+				C6B22BB41EE241B200000074 /* CardView.swift in Sources */,
+				C6B22BA01EE2235300000074 /* MapViewController.swift in Sources */,
+				C62C1CB41EE4CB370056B154 /* LoadingView.swift in Sources */,
+				C6369DC71EE2B83D00C92477 /* SelectorCollectionViewCell.swift in Sources */,
+				C6369DC91EE2BC3100C92477 /* SelectorCollectionViewController.swift in Sources */,
+				C6EFEC211EE4A298009177A4 /* PokemonSelectedDelegate.swift in Sources */,
+				C6B22BB01EE23C6C00000074 /* NavBarController.swift in Sources */,
 				C6B22B9E1EE2235300000074 /* AppDelegate.swift in Sources */,
+				C6005C231EE303E900109FC8 /* CustomAnnotationView.swift in Sources */,
+				C6B22BB21EE23D5E00000074 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,7 +351,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -248,7 +395,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -259,10 +406,12 @@
 		};
 		C6B22BAD1EE2235400000074 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DEF1139A8BA144AA5EA30939 /* Pods-PokemonRadar.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = V5L9D6NWDM;
 				INFOPLIST_FILE = PokemonRadar/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.alium.PokemonRadar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -272,10 +421,12 @@
 		};
 		C6B22BAE1EE2235400000074 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7884D5AA9966095E3D93C970 /* Pods-PokemonRadar.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = V5L9D6NWDM;
 				INFOPLIST_FILE = PokemonRadar/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.alium.PokemonRadar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -302,6 +453,7 @@
 				C6B22BAE1EE2235400000074 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
